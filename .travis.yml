@@ -12,6 +12,5 @@
 # under the License.
 language: java
 jdk:
-- oraclejdk7
-- openjdk7
+- openjdk8
 install: mvn install -B -V

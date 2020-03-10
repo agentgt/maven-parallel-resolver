@@ -2,7 +2,7 @@ maven-parallel-resolver
 =======================
 
 A Thread safe ProjectDependenciesResolver (Fixes MNG-5315)
-[![Build Status](https://travis-ci.org/evanchsa/maven-parallel-resolver.svg?branch=master)](https://travis-ci.org/evanchsa/maven-parallel-resolver)
+[![Build Status](https://travis-ci.org/agentgt/maven-parallel-resolver.svg?branch=master)](https://travis-ci.org/agentgt/maven-parallel-resolver)
 
 Place the resulting JAR in the $MAVEN_HOME/lib/ext . Alternatively the mvn
 script can be patched to point to a custom m2.conf:
@@ -11,6 +11,7 @@ script can be patched to point to a custom m2.conf:
 
 with the content:
 
+```
   main is org.apache.maven.cli.MavenCli from plexus.core
 
   set maven.home default ${user.home}/m2
@@ -19,6 +20,8 @@ with the content:
   optionally /path/to/other/ext/*.jar
   optionally ${maven.home}/lib/ext/*.jar
   load       ${maven.home}/lib/*.jar
+
+```
 
 License
 =======================
